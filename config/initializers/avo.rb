@@ -102,3 +102,7 @@ Avo.configure do |config|
     link "Profile", path: "/avo/profile", icon: "user-circle"
   }
 end
+
+Rails.configuration.to_prepare do
+  Avo::Index::ResourceControlsComponent.prepend AnimalStiConcern
+end
