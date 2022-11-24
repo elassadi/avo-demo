@@ -73,4 +73,19 @@ group :test do
 end
 
 
-gem "avo"
+gem 'avo', '2.20'
+gem 'ransack'
+
+gem "pundit"
+
+# Active Storage makes it simple to upload and reference files
+gem "activestorage"
+
+# High-level image processing wrapper for libvips and ImageMagick/GraphicsMagick
+gem "image_processing"
+
+# All sorts of useful information about every country packaged as convenient little country objects.
+gem "countries"
+
+# Create beautiful JavaScript charts with one line of Ruby
+gem "chartkick"

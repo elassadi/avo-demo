@@ -87,6 +87,8 @@ Avo.configure do |config|
     end
 
     section "Resources", icon: "resources" do
+      resource :post
+      resource :comment
       resource :farm
       resource :bird
       resource :mammal

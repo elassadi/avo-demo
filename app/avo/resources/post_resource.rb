@@ -9,4 +9,7 @@ class PostResource < Avo::BaseResource
   field :body, as: :text
   field :comments, as: :has_many
   # add fields here
+
+
+
 end

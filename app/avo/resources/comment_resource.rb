@@ -9,4 +9,7 @@ class CommentResource < Avo::BaseResource
   field :body, as: :text
   field :post, as: :belongs_to
   # add fields here
+
+
+  action SetPrimaryAction
 end
