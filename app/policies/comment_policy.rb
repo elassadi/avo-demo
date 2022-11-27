@@ -19,7 +19,8 @@ class CommentPolicy < ApplicationPolicy
   end
 
   def update?
-    true
+    binding.pry
+    false
   end
 
   def edit?

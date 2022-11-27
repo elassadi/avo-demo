@@ -9,14 +9,6 @@ class SetPrimaryAction < Avo::BaseAction
   self.visible = lambda do
     begin
       return false unless view == :show || view == :index
-
-      Rails.logger.tagged ("Debug resources ") do
-        Rails.logger.debug "================================ Iam expecting a  child  resource ================================"
-        Rails.logger.debug "#{resource.model.inspect}"
-        Rails.logger.debug "================================ and the Parent ================================"
-        Rails.logger.debug "#{parent_resource.model.inspect}"
-        Rails.logger.debug "================================ both are the same================================"
-      end
       true
     end
   end
