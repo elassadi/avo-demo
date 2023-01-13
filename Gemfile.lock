@@ -268,7 +268,7 @@ PLATFORMS
 
 DEPENDENCIES
   activestorage
-  avo (= 2.20)
+  avo
   bootsnap
   capybara
   chartkick

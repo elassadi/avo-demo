@@ -73,7 +73,7 @@ group :test do
 end
 
 
-gem 'avo', '2.20'
+gem 'avo'
 gem 'ransack'
 
 gem "pundit"
