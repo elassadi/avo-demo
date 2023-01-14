@@ -10,9 +10,16 @@ class CommentResource < Avo::BaseResource
 
   field :id, as: :id
   field :body, as: :text
-  field :post, as: :belongs_to, searchable: false,
+  field :post, as: :belongs_to, searchable: true,
     html: {
       edit: {
+        input: {
+          data: {
+            action: "comment-resource#onCommentChange"
+          }
+        }
+      },
+      new: {
         input: {
           data: {
             action: "comment-resource#onCommentChange"

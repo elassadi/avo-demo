@@ -22,9 +22,8 @@ export default class extends Controller {
 
 
   async onCommentChange() {
-
     console.log("++++++++++++++ onCommentChange called +++++++++++++++++")
-
+    console.log(this.postBelongsToInputTarget.value)
   }
 
 }
